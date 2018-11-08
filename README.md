@@ -20,3 +20,10 @@ Ex:
 4 - Controle de versão deve ser feito no cabeçalho e discutido de acordo com as atualizações em equipe.
   4.1 - As versões devem seguir o padrão que inicializa em 0.alpha a diante. 
   4.2 - Toda vez que uma versão de código chegar em .5. sua proxima versao deve mudar a versão principal em si, mantendo todos os backups.
+5 - O projeto deve seguir o padrão MDBootstrap versão JQuery.
+  5.1 - A documentação pode ser encontrada em https://mdbootstrap.com/
+  5.2 - O arquivo para uso se encontra com o nome de MDB-Free_4.5.13.zip
+  5.3 - Todos os arquivos já se encontram em suas respectivas pastas. Basta seguir a hierarquia.
+6 - Os arquivos de mídia devem estar em qualidade igual ou superior a fullhd.
+7 - Devem ser usados os padrões básicos de UI e UX.
+8 - SE VOCÊ NÃO SABE O QUE ESTÁ FAZENDO PROCURE LER A DOCUMENTAÇÃO JÁ CITADA ACIMA OU PERGUNTE A QUEM SABE. POIS SUA FALTA DE INTERESSE PODE PREJUDICAR A TODOS.
