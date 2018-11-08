@@ -11,8 +11,8 @@ ou
   1.1 - É de extrema importância a manutenção e revisão do codigo com o nome de quem editou, data e nome do bloco de edições.
 2 - Os comentários devem seguir de acordo com o exemplo abaixo:
 Ex:
-  <!-- Nome do Bloco - Data - Usuario -->
-  <!-- /Fecha nome do bloco - Data - Usuario -->
+  < !-- Nome do Bloco - Data - Usuario -->
+  < !-- /Fecha nome do bloco - Data - Usuario -->
   
 3 - Todos os arquivos devem seguir uma hierarquia de pastas para que seja mantida máxima organização.
   3.1 - Se criar alguma pasta ou mover algum arquivo copie o caminho para o arquivo caminho.txt onde deve conter data, usuario  e o caminho a ser seguido.
