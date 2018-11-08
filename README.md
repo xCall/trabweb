@@ -5,7 +5,7 @@ Esse arquivo de texto deve ser lido e alterado de acordo com as suas necessidade
 Deve seguir os requisitos solicitados pelo seguinte documento que se encontra em
 --> https://drive.google.com/open?id=1ysAlBO90ppKFvBBeiE_wn5J-dVYnGUdu
 ou 
--->
+--> leia o arquivo Instruções para o trabalho - etapa 3
 
 1 - Deve ser efeituado o upload de todo o projeto toda vez que um ciclo de modificações for completado. 
   1.1 - É de extrema importância a manutenção e revisão do codigo com o nome de quem editou, data e nome do bloco de edições.
