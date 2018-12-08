@@ -1,0 +1,28 @@
+.navbar {
+    background-color: transparent!important;
+}
+
+.top-nav-collapse {
+    background-color: #33B5E5!important;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #33B5E5!important;
+    }
+}
+
+html,
+body,
+header,
+.view {
+  height: 100%;
+}
+
+/*#img1 {
+    background: url("")no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}*/
