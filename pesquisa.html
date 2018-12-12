@@ -45,7 +45,7 @@
 <body>
 
   <!-- Começo do projeto-->
-  <nav onclick="colorir()" class="navbar navbar-expand-lg text-center fixed-top navbar-dark info-color scrolling-navbar">
+  <nav onclick="colorir()" class="navbar navbar-expand-lg text-center fixed-top navbar-dark info-color scrolling-navbar" style="background-color: #33B5E5!important;">
     <a class="navbar-brand" href="index.html"><img src="img/logo-nav.png" alt=""></a>
     <button id="menu" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#NavBar" aria-controls="NavBar" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -74,7 +74,7 @@
       <form class="form-inline">
         <div class="md-form my-0 centro">
             <input class="form-control mr-sm-2" type="text" placeholder="O que você procura hoje?" aria-label="O que você procura hoje?">
-            <button class="btn btn-outline-white btn-md my-2 my-sm-0 ml-3" type="submit"> <a href="pesquisa.html">Procurar</a></button>
+            <button class="btn btn-outline-white btn-md my-2 my-sm-0 ml-3" type="submit">Procurar</button>
         </div>
         <button type="button" class="btn btn-outline-white btn-md my-2 my-sm-0 ml-3" data-toggle="popover" data-placement="bottom" title="Carrinho de Compras"
           data-content="Seus produtos estão te esperando no seu carrinho.">
@@ -82,20 +82,83 @@
         </button>
     </div>
   </nav>
+  <br><br><br><br><br>
   <section>
-    <div class="card mb-3 text-center text-lg-center">
-      <img class="card-img-top" src="img/carousel-marcas/adidas.jpg" alt="Adidas Retro">
-      <div class="card-body">
-        <h5 class="card-title">Adidas Retro 96</h5>
-        <p class="card-text">Esteja mais atual do que nunca, usando um classico em seus pés.</p>
-        <p class="card-text"><small class="text-muted">R$ 119,90 7x	de R$ 17,13*	s/juros no Cartão</small></p>
-        <a href="" class="btn btn-outline-amber" data-toggle="modal" data-target="#comprarModal">Add. ao Carrinho</a>       
+    <div class="container-fluid text-center text-lg-center">
+      <div class="row">
+        <div class="col-lg">
+         <h1>Você procurou por?</h1>
+        </div>
       </div>
+      <div class="row">
+        <div class="col-lg-6">
+          </select>
+          <h6>Pesquisar por:</h6>
+          <select name="" id="">
+            <option value="">Mais barato</option>
+            <option value="">Mais caro</option>
+            <option value="">Mais vendidos</option>
+          </select>
+        </div>
+        <div class="col-lg-6">
+          <h6>Cor:</h6>
+          <select name="" id="">
+            <option value="">Azul</option>
+            <option value="">Verde</option>
+            <option value="">Amarelo</option>
+          </select>
+        </div>
+    </div>
     </div>
   </section>
   <br><br>
   <section>
-   <br>
+    <div class="container-fluid text-center text-lg-center">
+      <div class="row">
+        <div class="col-lg-3" onmouseout="camisa1()">
+          <div class="card" style="width: 18rem;">
+            <img  id="camiseta1" src="img/camisetas/camisa1/img1.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">CAMISA COMFORT ESTAMPADA EM VOILE</h5>
+              <p class="card-text">R$ 119,90 7x	de R$ 17,13*	s/juros no Cartão</p>
+              <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#comprarModal">Add. ao Carrinho</button>       
+            </div>
+          </div>
+        </div>
+        <hr class="clearfix w-100 d-lg-none pb-3">
+        <div class="col-lg-3">
+          <div class="card" style="width: 18rem;">
+            <img src="img/camisetas/camisa2/img1.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">CAMISA COM ESTAMPA FLORAL EM VISCOSE</h5>
+              <p class="card-text">R$ 119,90 7x	de R$ 17,13*	s/juros no Cartão </p>
+              <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#comprarModal">Add. ao Carrinho</button>      
+              </div>
+           </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card" style="width: 18rem;">
+            <img src="img/camisetas/camisa3/img1.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">CAMISA ESTAMPADA EM TRICOLINE</h5>
+              <p class="card-text">R$ 99,90 5x de R$ 19,98*	s/juros no Cartão</p>
+              <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#comprarModal">Add. ao Carrinho</button>    
+              </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card" style="width: 18rem;">
+            <img src="img/camisetas/camisa4/img1.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">CAMISA SLIM COM BORDADO</h5>
+              <p class="card-text">R$ 119,90 7x	de R$ 17,13*	s/juros no Cartão</p>
+              <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#comprarModal">Add. ao Carrinho</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br>
     <div class="container-fluid text-center text-lg-center">
       <div class="row">
         <div class="col-lg-3">
