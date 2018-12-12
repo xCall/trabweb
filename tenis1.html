@@ -37,6 +37,7 @@
     <link href="css/mdb.min.css" rel="stylesheet">
     <!-- CSS customizado -->
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="img/styleimg.css">
     <!-- Font Goole API (Titulo) -->
     <link href="https://fonts.googleapis.com/css?family=Mr+Dafoe" rel="stylesheet">
 </head>
@@ -44,9 +45,9 @@
 <body>
 
   <!-- Começo do projeto-->
-  <nav class="navbar navbar-expand-lg text-center fixed-top navbar-dark info-color scrolling-navbar">
+  <nav onclick="colorir()" class="navbar navbar-expand-lg text-center fixed-top navbar-dark info-color scrolling-navbar">
     <a class="navbar-brand" href="index.html"><img src="img/logo-nav.png" alt=""></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#NavBar" aria-controls="NavBar" aria-expanded="false" aria-label="Toggle navigation">
+    <button id="menu" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#NavBar" aria-controls="NavBar" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="NavBar">
@@ -71,7 +72,7 @@
         </li>
       </ul>
       <form class="form-inline">
-        <div class="md-form my-0 justify-content-center">
+        <div class="md-form my-0 centro">
             <input class="form-control mr-sm-2" type="text" placeholder="O que você procura hoje?" aria-label="O que você procura hoje?">
             <button class="btn btn-outline-white btn-md my-2 my-sm-0 ml-3" type="submit">Procurar</button>
         </div>
@@ -82,67 +83,66 @@
     </div>
   </nav>
   <section>
-    <div id="carouselTenis" class="carousel slide carousel-fade" data-ride="carousel">
-      <!--Indicadores-->
-      <ol class="carousel-indicators">
-        <li data-target="#carouselTenis" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselTenis" data-slide-to="1"></li>
-        <li data-target="#carouselTenis" data-slide-to="2"></li>
-      </ol>
-      <!--/.Indicadores-->
-      <!--Slides-->
-      <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active">
-          <div class="view">
-            <img class="d-block w-100" src="img/carousel-marcas/nike_sneakers.jpg" alt="Tenis Nike Sneakers Shoes">
-            <div class="mask rgba-black-strong"></div>
-          </div>
-          <div class="carousel-caption">
-            <h3 class="h3-responsive">SEMPRE ORIGINAL</h3>
-            <p>Coleção Sneakers Shoes</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <!--Mask color-->
-          <div class="view">
-            <img class="d-block w-100" src="img/carousel-marcas/feet_sneakers_nike_sport_111238_1280x720.jpg" alt="Tenis Nike Sneakers">
-            <div class="mask rgba-black-strong"></div>
-          </div>
-          <div class="carousel-caption">
-            <h3 class="h3-responsive">YOUNG 96</h3>
-            <p>Coleção Basic Sneakers</p>
+    <div class="card mb-3 text-center text-lg-center">
+      <img class="card-img-top" src="img/carousel-marcas/adidas.jpg" alt="Adidas Retro">
+      <div class="card-body">
+        <h5 class="card-title">Adidas Retro 96</h5>
+        <p class="card-text">Esteja mais atual do que nunca, usando um classico em seus pés.</p>
+        <p class="card-text"><small class="text-muted">R$ 119,90 7x	de R$ 17,13*	s/juros no Cartão</small></p>
+        <a href="" class="btn btn-outline-amber" data-toggle="modal" data-target="#comprarModal">Add. ao Carrinho</a>       
+      </div>
+    </div>
+  </section>
+  <br><br>
+  <section>
+   <br>
+    <div class="container-fluid text-center text-lg-center">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="card" style="width: 18rem;">
+            <img src="img/camisetas/camisa1/img1.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">CAMISA COMFORT ESTAMPADA EM VOILE</h5>
+              <p class="card-text">R$ 119,90 7x	de R$ 17,13*	s/juros no Cartão</p>
+              <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#comprarModal">Add. ao Carrinho</button>       
+            </div>
           </div>
         </div>
-        <div class="carousel-item">
-          <!--Mask color-->
-          <div class="view">
-            <img class="d-block w-100" src="img/carousel-marcas/adidas.jpg" alt="Third slide">
-            <div class="mask rgba-black-strong"></div>
+        <hr class="clearfix w-100 d-lg-none pb-3">
+        <div class="col-lg-3">
+          <div class="card" style="width: 18rem;">
+            <img src="img/camisetas/camisa2/img1.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">CAMISA COM ESTAMPA FLORAL EM VISCOSE</h5>
+              <p class="card-text">R$ 119,90 7x	de R$ 17,13*	s/juros no Cartão </p>
+              <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#comprarModal">Add. ao Carrinho</button>      
+            </div>
+           </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card" style="width: 18rem;">
+            <img src="img/camisetas/camisa3/img1.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">CAMISA ESTAMPADA EM TRICOLINE</h5>
+              <p class="card-text">R$ 99,90 5x de R$ 19,98*	s/juros no Cartão</p>
+              <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#comprarModal">Add. ao Carrinho</button>    
+            </div>
           </div>
-          <div class="carousel-caption">
-            <h3 class="h3-responsive">MANDE NO JOGO</h3>
-            <p>Coleção Adidas Retro</p>
+        </div>
+        <div class="col-lg-3">
+          <div class="card" style="width: 18rem;">
+            <img src="img/camisetas/camisa4/img1.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">CAMISA SLIM COM BORDADO</h5>
+              <p class="card-text">R$ 119,90 7x	de R$ 17,13*	s/juros no Cartão</p>
+              <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#comprarModal">Add. ao Carrinho</button>
+            </div>
           </div>
         </div>
       </div>
-      <!--/.Slides-->
-      <!--Controls-->
-      <a class="carousel-control-prev" href="#carouselTenis" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselTenis" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-      <!--/.Controls-->
     </div>
-    <!--/.Carousel Wrapper-->
   </section>
-  <section>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-  </section>
-  
+  <br><br>
 
   <footer class="page-footer font-small blue pt-4">
     <div class="container-fluid text-center text-md-left">
@@ -243,6 +243,27 @@
       <a href="#"> MKStore.com</a>
     </div>
   </footer>
+  <!--Modal-->
+  <div class="modal fade" id="comprarModal" tabindex="-1" role="dialog" aria-labelledby="textModal" aria-hidden="true">
+      <div class="modal-dialog modal-side modal-bottom-right" role="Informacao do carrinho">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="textModal">Seu Carrinho de Compras</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Seu item está te aguardando no seu carrinho.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-amber" data-dismiss="modal">Comprar mais?</button>
+            <button type="button" class="btn btn-outline-cyan">Encerrar compra?</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!--/Modal-->
   <!-- /Fim do projeto-->
 
   <!-- SCRIPTS -->
@@ -254,7 +275,7 @@
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
-
+  <script src="img/scriptimg.js"></script>
   <script src="js/script.js"></script>
 </body>
 

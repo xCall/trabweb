@@ -37,6 +37,7 @@
     <link href="css/mdb.min.css" rel="stylesheet">
     <!-- CSS customizado -->
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="img/styleimg.css">
     <!-- Font Goole API (Titulo) -->
     <link href="https://fonts.googleapis.com/css?family=Mr+Dafoe" rel="stylesheet">
 </head>
@@ -97,6 +98,7 @@
           <div class="carousel-caption">
             <h3 class="h3-responsive">SEMPRE ORIGINAL</h3>
             <p>Coleção Sneakers Shoes</p>
+            <a href="#" class="btn btn-outline-amber" data-toggle="modal" data-target="#comprarModal">Add. ao Carrinho</a>       
           </div>
         </div>
         <div class="carousel-item">
@@ -107,6 +109,7 @@
           <div class="carousel-caption">
             <h3 class="h3-responsive">YOUNG 96</h3>
             <p>Coleção Basic Sneakers</p>
+            <a href="#" class="btn btn-outline-amber" data-toggle="modal" data-target="#comprarModal">Add. ao Carrinho</a>       
           </div>
         </div>
         <div class="carousel-item">
@@ -117,6 +120,7 @@
           <div class="carousel-caption">
             <h3 class="h3-responsive">MANDE NO JOGO</h3>
             <p>Coleção Adidas Retro</p>
+            <a href="tenis1.html" class="btn btn-outline-amber" data-toggle="modal" data-target="#comprarModal">Add. ao Carrinho</a>       
           </div>
         </div>
       </div>
@@ -132,23 +136,94 @@
   </section>
   <br><br>
   <section>
-    <div class="container-fluid text-center text-lg-left">
+    <div class="container-fluid text-center text-lg-center">
       <div class="row">
-        <div class="col-lg-3">
-
+        <div class="col-lg-3" onmouseout="camisa1()">
+          <div class="card" style="width: 18rem;">
+            <img  id="camiseta1" src="img/camisetas/camisa1/img1.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">CAMISA COMFORT ESTAMPADA EM VOILE</h5>
+              <p class="card-text">R$ 119,90 7x	de R$ 17,13*	s/juros no Cartão</p>
+              <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#comprarModal">Add. ao Carrinho</button>       
+            </div>
+          </div>
         </div>
         <hr class="clearfix w-100 d-lg-none pb-3">
         <div class="col-lg-3">
-
+          <div class="card" style="width: 18rem;">
+            <img src="img/camisetas/camisa2/img1.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">CAMISA COM ESTAMPA FLORAL EM VISCOSE</h5>
+              <p class="card-text">R$ 119,90 7x	de R$ 17,13*	s/juros no Cartão </p>
+              <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#comprarModal">Add. ao Carrinho</button>      
+              </div>
+           </div>
         </div>
         <div class="col-lg-3">
-
+          <div class="card" style="width: 18rem;">
+            <img src="img/camisetas/camisa3/img1.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">CAMISA ESTAMPADA EM TRICOLINE</h5>
+              <p class="card-text">R$ 99,90 5x de R$ 19,98*	s/juros no Cartão</p>
+              <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#comprarModal">Add. ao Carrinho</button>    
+              </div>
+          </div>
         </div>
         <div class="col-lg-3">
-
+          <div class="card" style="width: 18rem;">
+            <img src="img/camisetas/camisa4/img1.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">CAMISA SLIM COM BORDADO</h5>
+              <p class="card-text">R$ 119,90 7x	de R$ 17,13*	s/juros no Cartão</p>
+              <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#comprarModal">Add. ao Carrinho</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <div class="container-fluid text-center text-lg-center">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="card" style="width: 18rem;">
+            <img src="img/camisetas/camisa1/img1.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">CAMISA COMFORT ESTAMPADA EM VOILE</h5>
+              <p class="card-text">R$ 119,90 7x	de R$ 17,13*	s/juros no Cartão</p>
+              <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#comprarModal">Add. ao Carrinho</button>       
+            </div>
+          </div>
+        </div>
+        <hr class="clearfix w-100 d-lg-none pb-3">
+        <div class="col-lg-3">
+          <div class="card" style="width: 18rem;">
+            <img src="img/camisetas/camisa2/img1.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">CAMISA COM ESTAMPA FLORAL EM VISCOSE</h5>
+              <p class="card-text">R$ 119,90 7x	de R$ 17,13*	s/juros no Cartão </p>
+              <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#comprarModal">Add. ao Carrinho</button>      
+            </div>
+           </div>
         </div>
         <div class="col-lg-3">
-
+          <div class="card" style="width: 18rem;">
+            <img src="img/camisetas/camisa3/img1.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">CAMISA ESTAMPADA EM TRICOLINE</h5>
+              <p class="card-text">R$ 99,90 5x de R$ 19,98*	s/juros no Cartão</p>
+              <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#comprarModal">Add. ao Carrinho</button>    
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card" style="width: 18rem;">
+            <img src="img/camisetas/camisa4/img1.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">CAMISA SLIM COM BORDADO</h5>
+              <p class="card-text">R$ 119,90 7x	de R$ 17,13*	s/juros no Cartão</p>
+              <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#comprarModal">Add. ao Carrinho</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -254,6 +329,27 @@
       <a href="#"> MKStore.com</a>
     </div>
   </footer>
+  <!--Modal-->
+  <div class="modal fade" id="comprarModal" tabindex="-1" role="dialog" aria-labelledby="textModal" aria-hidden="true">
+      <div class="modal-dialog modal-side modal-bottom-right" role="Informacao do carrinho">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="textModal">Seu Carrinho de Compras</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Seu item está te aguardando no seu carrinho.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-amber" data-dismiss="modal">Comprar mais?</button>
+            <button type="button" class="btn btn-outline-cyan">Encerrar compra?</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!--/Modal-->
   <!-- /Fim do projeto-->
 
   <!-- SCRIPTS -->
@@ -265,7 +361,7 @@
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
-
+  <script src="img/scriptimg.js"></script>
   <script src="js/script.js"></script>
 </body>
 
